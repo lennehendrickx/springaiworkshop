@@ -14,7 +14,7 @@ https://www.youtube.com/watch?v=FzLABAppJfM
     ```bash
     ollama serve
     ```
-4. Download the desired model (e.g., `gpt-oss:20b`):
+4. Download the desired model (e.g., `gpt-oss:20b, gemma3:12b`):
    ```bash
    ollama pull gpt-oss:20b
    ```
@@ -34,7 +34,7 @@ https://www.youtube.com/watch?v=FzLABAppJfM
    ```bash
    llama --version
    ```
-3. Run the desired model (e.g., `gpt-oss:20b`)
+3. Run the desired model (e.g., `google/gemma-3-12b-it-qat-q4_0-gguf`)
    ```bash
-   llama-server -hf unsloth/gpt-oss-20b-GGUF --port 1234
+   llama-server -hf google/gemma-3-12b-it-qat-q4_0-gguf --port 1234
    ```

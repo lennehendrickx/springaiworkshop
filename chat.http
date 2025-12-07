@@ -15,3 +15,7 @@ GET http://localhost:8080/vacation/unstructured
 
 ### Vacation structured
 GET http://localhost:8080/vacation/structured
+
+### Image-to-text
+# @timeout 120s
+GET http://localhost:8080/image-to-text
