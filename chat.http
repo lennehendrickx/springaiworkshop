@@ -1,0 +1,17 @@
+### AI Generate
+GET http://localhost:8080/ai/generate
+
+### AI Generate Stream
+GET http://localhost:8080/ai/generateStream
+
+### Acme chat
+GET http://localhost:8080/acme/chat?message=test
+
+### Article new post
+GET http://localhost:8080/posts/new?topic=spring ai
+
+### Vacation unstructured
+GET http://localhost:8080/vacation/unstructured
+
+### Vacation structured
+GET http://localhost:8080/vacation/structured

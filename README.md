@@ -10,7 +10,31 @@ https://www.youtube.com/watch?v=FzLABAppJfM
    ```bash
    ollama version
    ```
-3. Download the desired model (e.g., `gpt-oss:20b`):
+3. Start ollama
+    ```bash
+    ollama serve
+    ```
+4. Download the desired model (e.g., `gpt-oss:20b`):
    ```bash
    ollama pull gpt-oss:20b
+   ```
+5. Run the model:
+   ```bash
+   ollama run gpt-oss:20b
+   ```
+   
+
+### Llama.cpp setup
+
+1. Install Llama.cpp using Homebrew:
+   ```bash
+   brew install llama.cpp
+   ```
+2. Verify the installation:
+   ```bash
+   llama --version
+   ```
+3. Run the desired model (e.g., `gpt-oss:20b`)
+   ```bash
+   llama-server -hf unsloth/gpt-oss-20b-GGUF --port 1234
    ```
