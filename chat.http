@@ -19,3 +19,17 @@ GET http://localhost:8080/vacation/structured
 ### Image-to-text
 # @timeout 120s
 GET http://localhost:8080/image-to-text
+
+### Text-to-image
+# @timeout 120s
+GET http://localhost:8080/generate-image
+
+### Memory 1
+GET http://localhost:8080/memory?message=My name is John and I live in New York City.
+
+### Memory 2
+GET http://localhost:8080/memory?message=Where do I live?
+
+### Models
+# @timeout 120s
+GET http://localhost:8080/models

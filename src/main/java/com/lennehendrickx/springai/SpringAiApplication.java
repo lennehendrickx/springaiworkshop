@@ -1,6 +1,7 @@
 package com.lennehendrickx.springai;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.boot.SpringApplication;
@@ -24,6 +25,12 @@ public class SpringAiApplication {
     @Primary
     public ChatClient ollamaChatClient(OllamaChatModel ollamaChatModel) {
         return ChatClient.create(ollamaChatModel);
+    }
+
+    @Bean
+    @Primary
+    public ChatModel chatModel(OllamaChatModel ollamaChatModel) {
+        return ollamaChatModel;
     }
 
 }
